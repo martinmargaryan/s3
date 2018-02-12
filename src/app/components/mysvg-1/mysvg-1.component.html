@@ -1,0 +1,94 @@
+<div>
+  <svg width="1200" height="900" version="1.1" viewBox="0 0 1200 900" 
+	xmlns="http://www.w3.org/2000/svg" 
+	xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <symbol id="ardown"  width="50" height="50"  >
+   <title>Arrow down</title>
+   <polygon points="0 25 50 25 25 50"/>
+  </symbol>
+  <symbol id="zadvijka" >
+   <title>Zadvijka</title>
+   <polygon points="0 0 50 0 25 25 0 50 50 50"/>
+  </symbol>
+  <symbol id="nasos" width="50" height="50" >
+   <title>Nasos</title>
+	<circle cx="27" cy="27" r="25" />
+	<polygon points="2 25 50 25 25 50"/>
+  </symbol>
+  <symbol id="manometr" width="50" height="50">
+   <title>Manometr</title>
+   <circle cx="27" cy="27" r="25" />
+   <line x1="7" x2="50" y1="40" y2="10"/>
+   <polygon points="50 10 20 20 30 35"/>
+  </symbol>
+  <symbol id="rasxodometr">
+   <title>Rasxodometr</title>
+   <circle cx="27" cy="27" r="25" style="fill:#fff"/>
+   <line x1="15" x2="50" y1="5" y2="27"/>
+   <line x1="15" x2="50" y1="47" y2="27"/>
+  </symbol>
+  <symbol id="ventilel">
+   <title>El privod ventil</title>
+   <polygon points="0 0 50 0 25 25 0 50 50 50"/>
+   <line x1="25" x2="45" y1="25" y2="25"/>
+   <circle cx="45" cy="25" r="5" style="fill:#fff"/>
+  </symbol>
+  <symbol id="arright">
+   <title>right arrow</title>
+   <path d="m0 10l20 15-20 15z"/>
+  </symbol>show up
+ </defs>
+ <metadata>
+ </metadata>
+ <!-- <g transform="translate(0 -58.875), scale(0.5, 0.5)"> -->
+ <g transform="translate(0 -58.875)">
+
+	<!-- Nasosi -->
+   <use id="nasose_1" transform="rotate(-83.62 226.68 -18.226)" width="100%" height="100%" class="nasos"
+		 style.fill= {{nasosColor}} xlink:href="#nasos" (click)="getElemId($event)" />
+  <use id="usenasos_2" transform="translate(500.28 107.87)" width="100%" height="100%" class="nasos"
+     style.fill= {{nasosColor}} xlink:href="#nasos" (click)="getElemId($event)"/>
+  <use id="usenasos_3" transform="translate(500 208.87)" width="100%" height="100%" class="nasos"  myattr="mineattr"
+		xlink:href="#nasos" (click)="getElemId($event)"/>
+  <use id="usenasos_4" transform="translate(500 283.87)" width="100%" height="100%"  class="nasos" 
+		xlink:href="#nasos" (click)="getElemId($event)" />
+		
+	<!-- Armatura -->
+	<g id="parts" title="armatura" (click)="togglePathColor($event)">
+	  <path id="path_1"  d="m75 108.87v75h75" />
+	  <path id="path_2" d="m150 183.87h75"  />
+	  <path id="path_3" d="m275 183.87h50"  />
+	  <path id="path_4" d="m375 183.87h50v-50h75"  />
+	  <path id="path_5" d="m425 183.87v50h75"  />
+	  <path id="path_6" d="m425 233.87v75h75"  />
+	  <path id="path_7" d="m550 133.87h75v225" />
+	  <path id="path_8" d="m550 233.87h75"  />
+	  <path id="path_9" d="m550 308.87h75"  />
+	  <path id="path_10" d="m650 383.87h75"  />
+	  <path id="path_11" d="m750 383.87h100"  />
+	</g>
+			
+	<!-- The rest -->
+ 
+  <use id="useardown" transform="translate(50 58.875)" width="100%" height="100%"  xlink:href="#ardown" 
+	onclick="window.alert(this.id);" class="arrowdown"/>
+
+  <use id="usezadv1" transform="translate(125 158.87)" width="100%" height="100%" 
+	xlink:href="#zadvijka" onclick="getElemTypeAndId(this.id, this.style.fill)" class="zadvijka"/>
+  
+  <use transform="translate(320 154.87)" width="100%" height="100%"  
+	xlink:href="#manometr" class="manometr"/>
+  
+  <use transform="translate(597 357.87)" width="100%" height="100%" 
+	style="fill:none;stroke-width:2;stroke:#000000" xlink:href="#rasxodometr"/>
+  
+  <use transform="translate(705.41 357.87)" width="100%" height="100%" 
+	style="fill:none;stroke-width:2;stroke:#000000" xlink:href="#ventilel"/>
+
+  <use transform="translate(853 356.87)" width="100%" height="100%" 
+	style="fill:none;stroke-width:2;stroke:#000000" xlink:href="#arright"/>
+ </g>
+</svg>
+
+</div>

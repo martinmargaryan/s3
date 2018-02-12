@@ -1,0 +1,25 @@
+path {
+    fill:none;
+    stroke-width:4px;
+    stroke:#000
+}
+.nasos{
+    fill:yellow;
+    stroke-width:2;
+    stroke:#000000
+}
+.arrowdown{
+        fill:lightgreen;
+        stroke-width:2;
+        stroke:#000000
+}
+.zadvijka{
+    fill:lightgreen;
+    stroke-width:2;
+    stroke:#000000
+}
+.manometr{
+    fill: lightblue;
+    stroke-width:2;
+    stroke:#000000
+}
