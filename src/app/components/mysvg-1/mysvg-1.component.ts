@@ -26,9 +26,7 @@ export class Mysvg1Component implements OnInit {
     const el = document.getElementById(event.target.id);
     if (el.style.fill === this.nasosOnColor) {
       el.style.fill = this.nasosOffColor;
-    }
-    else 
-    {
+    } else  {
       el.style.fill = this.nasosOnColor;
     }
   }
@@ -43,9 +41,7 @@ export class Mysvg1Component implements OnInit {
 
     if (el.style.stroke === this.nasosOnColor) {
       el.style.stroke = this.nasosOffColor;
-    }
-    else
-    {
+    } else {
       el.style.stroke = this.nasosOnColor;
     }
 
